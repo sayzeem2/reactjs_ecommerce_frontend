@@ -1,9 +1,9 @@
 import React from 'react'
 import "./AboutUs.css"
-import facebookLogo from '/firstproject/src/assets/facebook_icon.png'
-import twitterLogo from '/firstproject/src/assets/twitter_icon.png'
-import linkedinLogo from '/firstproject/src/assets/linkedin_icon.png'
-import instaLogo from '/firstproject/src/assets/instagram_icon.png'
+import facebookLogo from '../assets/facebook_icon.png'
+import twitterLogo from '../assets/twitter_icon.png'
+import linkedinLogo from '../assets/linkedin_icon.png'
+import instaLogo from '../assets/instagram_icon.png'
 import { useNavigate } from 'react-router-dom'
 function AboutUs() {
 
