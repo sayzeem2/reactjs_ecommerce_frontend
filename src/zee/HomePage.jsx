@@ -2,17 +2,17 @@ import React from 'react'
 import './HomePage.css'
 import { useNavigate } from 'react-router-dom'
 import { ArrowRight, Heart, ShoppingBag, Sparkles } from 'lucide-react';
-import nikeLogo from '/firstproject/src/assets/nike.png';
-import hnmLogo from '/firstproject/src/assets/hnm.png';
-import levisLogo from '/firstproject/src/assets/Levis.png';
-import uspoloLogo from '/firstproject/src/assets/polo_logo.jpg';
-import pumaLogo from '/firstproject/src/assets/puma.png';
-import facebookLogo from '/firstproject/src/assets/facebook_icon.png'
-import twitterLogo from '/firstproject/src/assets/twitter_icon.png'
-import linkedinLogo from '/firstproject/src/assets/linkedin_icon.png'
-import instaLogo from '/firstproject/src/assets/instagram_icon.png'
-import twoPartLeftImage from '/firstproject/src/assets/two-part-left-image.png'
-import twoPartRightImage from '/firstproject/src/assets/two-part-right-image.png'
+import nikeLogo from '../assets/nike.png';
+import hnmLogo from '../assets/hnm.png';
+import levisLogo from '../assets/Levis.png';
+import uspoloLogo from '../assets/polo_logo.jpg';
+import pumaLogo from '../assets/puma.png';
+import facebookLogo from '../assets/facebook_icon.png'
+import twitterLogo from '../assets/twitter_icon.png'
+import linkedinLogo from '../assets/linkedin_icon.png'
+import instaLogo from '../assets/instagram_icon.png'
+import twoPartLeftImage from '../assets/two-part-left-image.png'
+import twoPartRightImage from '../assets/two-part-right-image.png'
 
 
 function HomePage() {
