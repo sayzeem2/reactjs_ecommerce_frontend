@@ -294,6 +294,12 @@ function HomePage() {
     const goToContactUsPage = () => {
         navigate("/contact-us")
     }
+    const goToTermsConditionsPage = () => {
+        navigate("/terms-conditions")
+    }
+       const goToShippingPolicyPage = () => {
+        navigate("/shipping-policy")
+    }
     return (
         <div>
             {/* ------------------------------------------------------------------------------------------------------------------ */}
@@ -642,9 +648,9 @@ function HomePage() {
                     </div>
                     <div className='footer-info-section-container'>
                         <h3 className='footer-info-heading'>More Info</h3>
-                        <a href="" className='footer-info-links'>Terms and Conditions</a>
+                        <a href="" className='footer-info-links' onClick={goToTermsConditionsPage}>Terms and Conditions</a>
                         <a href="" className='footer-info-links'>Privacy Policy</a>
-                        <a href="" className='footer-info-links'>Shipping Policy</a>
+                        <a href="" className='footer-info-links' onClick={goToShippingPolicyPage}>Shipping Policy</a>
                         <a href="" className='footer-info-links'>Sitemap</a>
                     </div>
                     <div className='footer-location-section-container'>
