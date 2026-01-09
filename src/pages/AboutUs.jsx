@@ -5,13 +5,36 @@ import twitterLogo from '../assets/twitter_icon.png'
 import linkedinLogo from '../assets/linkedin_icon.png'
 import instaLogo from '../assets/instagram_icon.png'
 import { useNavigate } from 'react-router-dom'
+import { Linkedin, Twitter } from 'lucide-react'
 function AboutUs() {
-
+    const teamObj = [{
+        id: 1,
+        name: "Mark Waugh",
+        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZW1wbG95ZWV8ZW58MHx8MHx8fDA%3D",
+        altname: "Founder"
+    }, {
+        id: 2,
+        name: "Angelina Waugh",
+        image: "https://images.unsplash.com/photo-1573497491765-dccce02b29df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGVtcGxveWVlfGVufDB8fDB8fHww",
+        altname: "Director"
+    }, {
+        id: 3,
+        name: "Celina Gomes",
+        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vZGVsfGVufDB8fDB8fHww",
+        altname: "Admin Head"
+    },
+    ]
 
 
     const navigate = useNavigate();
     const goToHomePage = () => {
         navigate("/home-page")
+    }
+    const goToAboutUsPage = () => {
+        navigate("/about-us")
+    }
+    const goToContactUsPage = () => {
+        navigate("/contact-us")
     }
     const socialmedialogos = [
         {
@@ -101,21 +124,49 @@ function AboutUs() {
                 </div>
             </div>
             {/* ---------------------------------------Our Story End--------------------------------------------- */}
+            {/* ---------------------------------------The Team Start--------------------------------------------- */}
+            <div className='aboutus-team-main-container'>
+                <div className='aboutus-team-heading'>
+                    <h3>OUR TEAM</h3>
+                </div>
+                <div className='aboutus-team-space-container'>
+                    {teamObj.slice(0, 3).map((item) => (
+                        <div key={item.id} className="aboutus-team-card">
+                            <div className="aboutus-team-image-wrapper">
+                                <img
+                                    src={item.image}
+                                    alt={item.altname}
+                                    className="aboutus-team-image"
+                                />
+                            </div>
+                            <div className="aboutus-team-content">
+                                <span className='aboutus-team-name'>{item.name}</span>
+                                <span className='aboutus-team-designation'>{item.altname}</span>
+                                <div className='aboutus-team-social-links'>
+                                    <Linkedin className="aboutus-team-social-logos" size={20} />
+                                    <Twitter className="aboutus-team-social-logos" size={20} />
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* ---------------------------------------The Team End--------------------------------------------- */}
             {/* ----------------------------------------Footer Section start------------------------------------------ */}
             <footer className='footer-main-container'>
                 <div className='footer-sections-main-container'>
                     <div className='footer-need-help-section-container'>
                         <h3 className='footer-need-help-heading'>Need Help</h3>
-                        <a href="" className='footer-need-help-links'>Contact Us</a>
+                        <a href="" className='footer-need-help-links' onClick={goToContactUsPage}>Contact Us</a>
                         <a href="" className='footer-need-help-links'>Track Order</a>
                         <a href="" className='footer-need-help-links'>Returns & Refunds</a>
                         <a href="" className='footer-need-help-links'>FAQ's</a>
                     </div>
                     <div className='footer-company-section-container'>
                         <h3 className='footer-company-heading'>Company</h3>
-                        <a href="" className='footer-company-links'>About Us</a>
+                        <a href="" className='footer-company-links' onClick={goToAboutUsPage}>About Us</a>
                         <a href="" className='footer-company-links'>Blog</a>
-                        <a href="" className='footer-company-links'>Contact Us</a>
+                        <a href="" className='footer-company-links' onClick={goToContactUsPage}>Contact Us</a>
                     </div>
                     <div className='footer-info-section-container'>
                         <h3 className='footer-info-heading'>More Info</h3>

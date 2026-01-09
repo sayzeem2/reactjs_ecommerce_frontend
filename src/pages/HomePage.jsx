@@ -291,6 +291,9 @@ function HomePage() {
     const goToAboutUsPage = () => {
         navigate("/about-us")
     }
+    const goToContactUsPage = () => {
+        navigate("/contact-us")
+    }
     return (
         <div>
             {/* ------------------------------------------------------------------------------------------------------------------ */}
@@ -598,9 +601,7 @@ function HomePage() {
                                                 alt={item.title}
                                                 className="limelight-saving-image"
                                             />
-                                            {/* <div className="limelight-wishlist-icon">
-                                            <Heart size={20} color="#000" />
-                                        </div> */}
+
                                         </div>
                                         <div className='limelight-card-title-text-btn-container'>
                                             <div className='limelight-card-title-text-container'>
@@ -628,7 +629,7 @@ function HomePage() {
                 <div className='footer-sections-main-container'>
                     <div className='footer-need-help-section-container'>
                         <h3 className='footer-need-help-heading'>Need Help</h3>
-                        <a href="" className='footer-need-help-links'>Contact Us</a>
+                        <a href="" className='footer-need-help-links' onClick={goToContactUsPage}>Contact Us</a>
                         <a href="" className='footer-need-help-links'>Track Order</a>
                         <a href="" className='footer-need-help-links'>Returns & Refunds</a>
                         <a href="" className='footer-need-help-links'>FAQ's</a>
@@ -637,7 +638,7 @@ function HomePage() {
                         <h3 className='footer-company-heading'>Company</h3>
                         <a href="" className='footer-company-links' onClick={goToAboutUsPage}>About Us</a>
                         <a href="" className='footer-company-links'>Blog</a>
-                        <a href="" className='footer-company-links'>Contact Us</a>
+                        <a href="" className='footer-company-links' onClick={goToContactUsPage}>Contact Us</a>
                     </div>
                     <div className='footer-info-section-container'>
                         <h3 className='footer-info-heading'>More Info</h3>
