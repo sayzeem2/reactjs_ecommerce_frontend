@@ -86,6 +86,7 @@ function ContactUs() {
                         <span className='contactus-mid-left-lower-contact'>Email : support@TheCornerStore.com</span>
                     </div>
 
+
                     <div className='contactus-mid-right-main-container'>
                         <div className='contactus-mid-right-content-container'>
                             <div className='contactus-mid-right-input-container'>
