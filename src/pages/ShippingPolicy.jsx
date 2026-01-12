@@ -81,101 +81,106 @@ function ShippingPolicy() {
                 <p className="shipping-updated">Last Updated: January 9, 2026</p>
 
                 <section className="shipping-section">
-                    <p>
+                    <p className='shipping-section-main-outline'>
                         This Shipping Policy outlines how orders placed on{" "}
                         <strong>www.TheCornerStore.com</strong> are processed, shipped, and
                         delivered. By placing an order with <strong>The Corner Store</strong>,
                         you agree to the terms stated below.
                     </p>
                 </section>
+                <div className='shipping-section-division-container'>
+                    <section className="shipping-section">
+                        <h2>1. Shipping Locations</h2>
+                        <p>
+                            We currently ship orders across India. At this time, we do not offer
+                            international shipping.
+                        </p>
+                    </section>
+                </div>
+                <div className='shipping-section-division-alternate-container'>
+                    <section className="shipping-section">
+                        <h2>2. Order Processing Time</h2>
+                        <p>
+                            Orders are typically processed within 1–3 business days after
+                            successful payment. Orders placed on weekends or public holidays
+                            will be processed on the next working day.
+                        </p>
+                    </section>
+                </div>
+                <div className='shipping-section-division-container'>
+                    <section className="shipping-section">
+                        <h2>3. Shipping Methods & Delivery Time</h2>
+                        <p>
+                            Delivery timelines may vary based on your location and courier
+                            partner:
+                        </p>
 
-                <section className="shipping-section">
-                    <h2>1. Shipping Locations</h2>
-                    <p>
-                        We currently ship orders across India. At this time, we do not offer
-                        international shipping.
-                    </p>
-                </section>
+                        <span className='shipping-section-strong'><strong >Metro & Urban Areas:</strong> 3–5 business days</span><span className='shipping-section-strong'><strong>Other Locations:</strong> 5–8 business days</span>
 
-                <section className="shipping-section">
-                    <h2>2. Order Processing Time</h2>
-                    <p>
-                        Orders are typically processed within 1–3 business days after
-                        successful payment. Orders placed on weekends or public holidays
-                        will be processed on the next working day.
-                    </p>
-                </section>
 
-                <section className="shipping-section">
-                    <h2>3. Shipping Methods & Delivery Time</h2>
-                    <p>
-                        Delivery timelines may vary based on your location and courier
-                        partner:
-                    </p>
-                    <ul>
-                        <li><strong>Metro & Urban Areas:</strong> 3–5 business days</li>
-                        <li><strong>Other Locations:</strong> 5–8 business days</li>
-                    </ul>
-                    <p>
-                        Delivery times are estimates and may vary due to weather conditions,
-                        logistics issues, or unforeseen circumstances.
-                    </p>
-                </section>
-
-                <section className="shipping-section">
-                    <h2>4. Shipping Charges</h2>
-                    <p>
-                        Shipping charges, if applicable, will be clearly displayed at
-                        checkout before payment. We may offer free shipping during promotions
-                        or on selected orders.
-                    </p>
-                </section>
-
-                <section className="shipping-section">
-                    <h2>5. Order Tracking</h2>
-                    <p>
-                        Once your order is shipped, you will receive tracking details via
-                        email or SMS. You can track your shipment using the provided tracking
-                        link.
-                    </p>
-                </section>
-
-                <section className="shipping-section">
-                    <h2>6. Delayed or Lost Shipments</h2>
-                    <p>
-                        While we work with reliable courier partners, The Corner Store is not
-                        responsible for delays caused by third-party logistics providers.
-                        If your order appears delayed or lost, please contact our support
-                        team for assistance.
-                    </p>
-                </section>
-
-                <section className="shipping-section">
-                    <h2>7. Incorrect Address</h2>
-                    <p>
-                        Customers are responsible for providing accurate shipping details.
-                        Orders shipped to incorrect addresses provided by the customer may
-                        not be eligible for refunds or re-shipment.
-                    </p>
-                </section>
-
-                <section className="shipping-section">
-                    <h2>8. Damaged Packages</h2>
-                    <p>
-                        If you receive a damaged package, please contact us within 48 hours
-                        of delivery with photos of the package and product. We will review
-                        the issue and assist accordingly.
-                    </p>
-                </section>
-
-                <section className="shipping-section">
-                    <h2>9. Contact Information</h2>
-                    <p>
-                        For shipping-related questions, contact us at: <br />
-                        <strong>Email:</strong> support@TheCornerStore.com <br />
-                        <strong>Location:</strong> Udaipur, Rajasthan, India
-                    </p>
-                </section>
+                    </section>
+                </div>
+                <div className='shipping-section-division-alternate-container'>
+                    <section className="shipping-section">
+                        <h2>4. Shipping Charges</h2>
+                        <p>
+                            Shipping charges, if applicable, will be clearly displayed at
+                            checkout before payment. We may offer free shipping during promotions
+                            or on selected orders.
+                        </p>
+                    </section>
+                </div>
+                <div className='shipping-section-division-container'>
+                    <section className="shipping-section">
+                        <h2>5. Order Tracking</h2>
+                        <p>
+                            Once your order is shipped, you will receive tracking details via
+                            email or SMS. You can track your shipment using the provided tracking
+                            link.
+                        </p>
+                    </section>
+                </div>
+                <div className='shipping-section-division-alternate-container'>
+                    <section className="shipping-section">
+                        <h2>6. Delayed or Lost Shipments</h2>
+                        <p>
+                            While we work with reliable courier partners, The Corner Store is not
+                            responsible for delays caused by third-party logistics providers.
+                        </p>
+                        <p> If your order appears delayed or lost, please contact our support
+                            team for assistance.</p>
+                    </section>
+                </div>
+                <div className='shipping-section-division-container'>
+                    <section className="shipping-section">
+                        <h2>7. Incorrect Address</h2>
+                        <p>
+                            Customers are responsible for providing accurate shipping details.
+                            Orders shipped to incorrect addresses provided by the customer may
+                            not be eligible for refunds or re-shipment.
+                        </p>
+                    </section>
+                </div>
+                <div className='shipping-section-division-alternate-container'>
+                    <section className="shipping-section">
+                        <h2>8. Damaged Packages</h2>
+                        <p>
+                            If you receive a damaged package, please contact us within 48 hours
+                            of delivery with photos of the package and product. We will review
+                            the issue and assist accordingly.
+                        </p>
+                    </section>
+                </div>
+                <div className='shipping-section-division-container'>
+                    <section className="shipping-section">
+                        <h2>9. Contact Information</h2>
+                        <p>
+                            For shipping-related questions, contact us at: <br />
+                            <strong>Email:</strong> support@TheCornerStore.com <br />
+                            <strong>Location:</strong> Udaipur, Rajasthan, India
+                        </p>
+                    </section>
+                </div>
             </main>
 
             {/* ---------------------------------------feedback End--------------------------------------------- */}
@@ -200,7 +205,7 @@ function ShippingPolicy() {
                         <a href="" className='footer-info-links' onClick={goToTermsConditionsPage}>Terms and Conditions</a>
                         <a href="" className='footer-info-links'>Privacy Policy</a>
                         <a href="" className='footer-info-links'>Shipping Policy</a>
-                        <a href="" className='footer-info-links'>Sitemap</a>
+                        {/* <a href="" className='footer-info-links'>Sitemap</a> */}
                     </div>
                     <div className='footer-location-section-container'>
                         <h3 className='footer-location-heading'>Location</h3>

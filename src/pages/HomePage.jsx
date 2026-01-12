@@ -651,7 +651,7 @@ function HomePage() {
                         <a href="" className='footer-info-links' onClick={goToTermsConditionsPage}>Terms and Conditions</a>
                         <a href="" className='footer-info-links'>Privacy Policy</a>
                         <a href="" className='footer-info-links' onClick={goToShippingPolicyPage}>Shipping Policy</a>
-                        <a href="" className='footer-info-links'>Sitemap</a>
+                        {/* <a href="" className='footer-info-links'>Sitemap</a> */}
                     </div>
                     <div className='footer-location-section-container'>
                         <h3 className='footer-location-heading'>Location</h3>

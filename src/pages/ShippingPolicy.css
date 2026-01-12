@@ -151,26 +151,73 @@ body {
     width: 100%;
     margin: 50px auto;
     font-family: Arial, Helvetica, sans-serif;
-    color: #1f1f1f;
+
     line-height: 1.7;
-    padding: 0 150px;
+    padding: 0 250px;
+    color: #254336
 }
 
 .shipping-title {
-    font-size: 2.5rem;
+    font-size: 4rem;
     text-align: center;
     margin-bottom: 0.2rem;
+    color: #254336;
 }
 
 .shipping-updated {
     text-align: center;
     font-size: 0.9rem;
+    font-weight: 700;
     color: #666;
     margin-bottom: 2.5rem;
+    padding: 0 500px;
+}
+
+.shipping-section-main-outline {
+    margin: 0 300px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.shipping-section-division-container {
+    background-color: #e2fff3;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease 0.1s;
+}
+
+.shipping-section-division-container:hover {
+    letter-spacing: 0.3px;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.shipping-section-division-alternate-container {
+    background-color: #b3e8d2;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease 0.1s;
+}
+
+.shipping-section-division-alternate-container:hover {
+    letter-spacing: 0.3px;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.shipping-section-strong {
+    margin: 0 40px;
 }
 
 .shipping-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1.3rem;
 }
 
 .shipping-section h2 {

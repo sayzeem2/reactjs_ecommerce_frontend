@@ -11,6 +11,7 @@ function ResetPasswordPage() {
     const goToSignUp = () => {
         navigate("/signup")
     }
+    
     const sendToEmailVerifyPage = () => {
         setCurrentView(1)
     }
