@@ -9,6 +9,8 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import TermsConditions from './pages/TermsConditions';
 import ShippingPolicy from './pages/ShippingPolicy';
+import ProductsListPage from './pages/ProductsListPage';
+import ContactDetailsPage from './pages/ContactDetailsPage';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/shipping-policy" element={<ShippingPolicy />} />
+        <Route path="/products-list" element={<ProductsListPage />} />
+        <Route path="/contact-details" element={<ContactDetailsPage />} />
 
 
       </Routes>

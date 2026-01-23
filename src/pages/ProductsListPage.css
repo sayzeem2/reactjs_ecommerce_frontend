@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* ---------------------------------------navbar part start------------------------------------------------------- */
+.productsList-nav-container {
+    display: flex;
+    width: 100%;
+    height: 111px;
+    border-bottom: 1px solid #80727e;
+    align-items: center;
+}
+
+.productsList-nav-element-container {
+    width: 1300px;
+    height: 46px;
+    margin-left: 100px;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productsList-nav-element-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.productsList-nav-logo {
+    background-image: url("/src/assets/Logo.png");
+    width: 100px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.productsList-nav-logo:hover {
+    cursor: pointer;
+}
+
+.productsList-nav-categories-container {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 100px;
+}
+
+.productsList-nav-categories-men,
+.productsList-nav-categories-women,
+.productsList-nav-categories-combos,
+.productsList-nav-categories-joggers {
+    text-decoration: none;
+    margin: 0 25px 0 25px;
+    color: #807D7E;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.productsList-nav-categories-shop {
+    text-decoration: none;
+    margin: 0 17px 0 17px;
+    color: #373536;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.productsList-nav-search-container {
+    display: flex;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 46px;
+    margin-left: 100px;
+}
+
+.productsList-nav-search-input {
+    margin-left: 7px;
+    width: 350px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #80727e;
+}
+
+.productsList-nav-search-input:focus {
+    outline: none;
+    width: 350px;
+}
+
+.productsList-nav-search-img {
+    background-image: url("/src/assets/search.png");
+    margin-left: 17px;
+    width: 20px;
+    height: 20px;
+}
+
+.productsList-nav-search-container:focus-within .nav-search-img {
+    display: none;
+}
+
+.productsList-nav-icons-container {
+    position: absolute;
+    right: 170px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 30px 0 30px;
+}
+
+.productsList-nav-wishlist-icon,
+.productsList-nav-account-icon,
+.productsList-nav-shoppingCart-icon {
+    width: 44px;
+    height: 44px;
+
+}
+
+.productsList-nav-wishlist-icon {
+    background-image: url("/src/assets/Wishlist_icon.png");
+}
+
+.productsList-nav-account-icon {
+    background-image: url("/src/assets/Account_icon.png");
+}
+
+.productsList-nav-shoppingCart-icon {
+    background-image: url("/src/assets/Shopping_Cart_icon.png");
+}
+
+/* ---------------------------------------navbar part end------------------------------------------------------- */
+/* ---------------------------------------Products List Content Start--------------------------------------------- */
+
+.products-list-main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.products-list-content-main-container {
+    width: 80%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.products-list-left-main-container {
+    width: 25%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.products-list-right-main-container {
+    width: 75%;
+    height: 100%;
+    background-color: blue;
+}
+
+/* ---------------------------------------Products List Content End--------------------------------------------- */
+
+/* ---------------------------------------feedback End--------------------------------------------- */
