@@ -41,6 +41,9 @@ const Footer = () => {
     const goToShippingPolicyPage = () => {
         navigate("/shipping-policy")
     }
+    const goToFAQPage = () => {
+        navigate("/FAQ")
+    }
     return (
         <footer className='footer-main-container'>
             <div className='footer-sections-main-container'>
@@ -49,7 +52,7 @@ const Footer = () => {
                     <a href="" className='footer-need-help-links' onClick={goToContactUsPage}>Contact Us</a>
                     <a href="" className='footer-need-help-links'>Track Order</a>
                     <a href="" className='footer-need-help-links'>Returns & Refunds</a>
-                    <a href="" className='footer-need-help-links'>FAQ's</a>
+                    <a href="" className='footer-need-help-links' onClick={goToFAQPage}>FAQ's</a>
                 </div>
                 <div className='footer-company-section-container'>
                     <h3 className='footer-company-heading'>Company</h3>

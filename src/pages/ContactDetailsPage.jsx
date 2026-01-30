@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { Button, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, TextField, Typography } from '@mui/material';
 import { Inventory, FavoriteBorder, Info as InfoIcon, Logout } from '@mui/icons-material'
 import { Box } from '@mui/material'
+import NavBar from '../components/NavBar';
 
 
 function ContactDetailsPage() {
@@ -25,29 +26,33 @@ function ContactDetailsPage() {
             name: 'Jhanvi shah',
             phone: '9924022345',
             address: '1/B Rajgaghitnagar Flats, opp. jain derasar , near Jain derasar, Rajyaghagar road',
+            isBilling: true,
+            isHome: 'Home',
             isDefault: false,
-            isShipping: true,
         },
         {
             name: 'Jhanvi shah',
             phone: '9924022345',
             address: '1/B Rajgaghitnagar Flats, opp. jain derasar , near Jain derasar, Rajyaghagar road',
+            isBilling: true,
+            isHome: 'Home',
+            isDefault: false,
+        },
+        {
+            name: 'Jhanvi shah',
+            phone: '9924022345',
+            address: '1/B Rajgaghitnagar Flats, opp. jain derasar , near Jain derasar, Rajyaghagar road',
+            isBilling: false,
+            isHome: 'Office',
             isDefault: true,
-            isShipping: false,
-        },
-        {
-            name: 'Jhanvi shah',
-            phone: '9924022345',
-            address: '1/B Rajgaghitnagar Flats, opp. jain derasar , near Jain derasar, Rajyaghagar road',
-            isDefault: false,
-            isShipping: false,
         },
         {
             name: 'Jhanvi shah',
             phone: '9924022345',
             address: 'L/4 Pragatinagar Flats, opp. jain derasar , near Jain derasar, Rajyaghagar road',
-            isDefault: false,
-            isShipping: false,
+            isBilling: false,
+            isHome: 'Home2',
+            isDefault: true,
         },
     ];
 
@@ -139,13 +144,42 @@ function ContactDetailsPage() {
             </Box >
         )
     }
+    const AddressContent = () => {
+        return (
+            <Box sx={{ p: 2 }}>
+                <Box display='flex' alignItems='center' justifyContent='space-between' sx={{ mb: 3, p: 0 }}>
+                    <Typography variant='h5' fontWeight='600' gutterBottom sx={{ mb: 3 }}>Address</Typography>
+                    <Typography variant='h6' fontWeight='600' color='textSecondary' gutterBottom sx={{ mt: 3, mb: 3 }}>Add New</Typography>
+                </Box>
+                <Box display='flex' alignItems='center' sx={{ marginTop: 2, }}>
+                    <Box display='flex' flexWrap='wrap' >
+                        {addresses.map((item, index) => (
+                            <Box key={index} display='flex' flexDirection='column' borderRadius='10px' sx={{ backgroundColor: '#eeeeee', width: '47%', p: 6, mb: 3, mx: 2 }}>
+                                <Typography variant='h5' color='textSecondary' fontWeight='600' gutterBottom sx={{ mb: 3 }}>{item.name}</Typography>
+                                <Typography variant='h6' color='textSecondary' fontWeight='500' gutterBottom sx={{ mb: 3 }}>{item.phone}</Typography>
+                                <Typography variant='h6' color='textSecondary' fontWeight='500' gutterBottom sx={{ mb: 3 }}>{item.address}</Typography>
+                                <Box>
+                                    <Button variant='outlined' color='textSecondary' sx={{ px: 2, borderRadius: '10px' }}>{item.isHome}</Button>
+                                    {item.isBilling && <Button variant='outlined' color='textSecondary' sx={{ mx: 2, px: 2, borderRadius: '10px' }}>Default Billing Address</Button>}
+                                </Box>
+                                <Box sx={{ mt: 2 }}>
+                                    <Button variant='text' color='textSecondary' sx={{ fontWeight: '900', borderRadius: '10px' }}>Remove</Button>
+                                    <Button variant='text' color='textSecondary' sx={{ fontWeight: '900', borderRadius: '10px' }}>Edit</Button>
+                                    {item.isDefault && <Button variant='text' color='textSecondary' sx={{ fontWeight: '900', px: 1, borderRadius: '10px' }}>Set As Default</Button>}
+                                </Box>
+                            </Box>))}
 
+                    </Box>
+                </Box>
+            </Box>
+        )
+    }
 
     return (
         <div>
             {/* ------------------------------------------------------------------------------------------------------------------ */}
             {/* -------------------------------------------navbar part------------------------------------------------------ */}
-            <nav className="contact-details-nav-container">
+            {/* <nav className="contact-details-nav-container">
                 <div className="contact-details-nav-element-container">
                     <div className='contact-details-nav-element-left'>
                         <div className='contact-details-nav-logo' onClick={goToHomePage}></div>
@@ -169,8 +203,8 @@ function ContactDetailsPage() {
                         </div>
                     </div>
                 </div>
-            </nav>
-
+            </nav> */}
+ <NavBar />
             {/* -------------------------------------------navbar part------------------------------------------------------ */}
             {/* -------------------------------------------Mid part start------------------------------------------------------ */}
 
@@ -184,6 +218,7 @@ function ContactDetailsPage() {
                     <Grid item xs={12} md={9} sx={{ width: '75%' }}>
                         <Paper elevation={0} >
                             <MainContent />
+                            <AddressContent />
                         </Paper>
                     </Grid>
 

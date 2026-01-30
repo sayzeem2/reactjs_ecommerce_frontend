@@ -1354,26 +1354,19 @@ body {
 }
 
 
-.limelight-wishlist-icon {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    background-color: white;
-    padding: 6px 7px 5px 8px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
+
 
 .limelight-card-setup {
     width: 310px;
     border-radius: 15px;
     margin-bottom: 20px;
+    position: relative;
     transition: all 0.3s ease;
 }
 
 .limelight-card-setup:hover {
     transform: scale(1.03);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
@@ -1406,6 +1399,8 @@ body {
     border-radius: 15px;
     transition: all 0.5s ease;
 }
+
+
 
 .limelight-card-title-text-btn-container {
     display: flex;
@@ -1447,6 +1442,24 @@ body {
 .limelight-card-price-bg span {
     font-weight: 600;
     font-size: 0.875rem;
+}
+
+.limelight-wishlist-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.1s ease;
+}
+
+.limelight-wishlist-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* ----------------------------------------Limelight Section end------------------------------------------ */

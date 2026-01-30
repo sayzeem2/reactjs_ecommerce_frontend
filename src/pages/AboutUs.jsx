@@ -7,6 +7,7 @@ import instaLogo from '../assets/instagram_icon.png'
 import { useNavigate } from 'react-router-dom'
 import { Linkedin, Twitter } from 'lucide-react'
 import Footer from '../components/Footer';
+import NavBar from '../components/NavBar'
 function AboutUs() {
     const teamObj = [{
         id: 1,
@@ -68,7 +69,7 @@ function AboutUs() {
     return (
         <div>
             {/* -----------------------------------navbar part start------------------------------------------- */}
-            <nav className="aboutus-nav-container">
+            {/* <nav className="aboutus-nav-container">
                 <div className="aboutus-nav-element-container">
                     <div className='aboutus-nav-element-left'>
                         <div className='aboutus-nav-logo' onClick={goToHomePage}></div>
@@ -92,7 +93,8 @@ function AboutUs() {
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav> */}
+            <NavBar />
             {/* -----------------------------------navbar part end------------------------------------------- */}
             {/* ---------------------------------------Our Story Start--------------------------------------------- */}
 

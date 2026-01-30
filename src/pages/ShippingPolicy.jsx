@@ -6,6 +6,7 @@ import linkedinLogo from '../assets/linkedin_icon.png'
 import instaLogo from '../assets/instagram_icon.png'
 import { useNavigate } from 'react-router-dom'
 import Footer from '../components/Footer';
+import NavBar from '../components/NavBar'
 function ShippingPolicy() {
 
     const navigate = useNavigate();
@@ -49,7 +50,7 @@ function ShippingPolicy() {
     return (
         <div>
             {/* -----------------------------------navbar part start------------------------------------------- */}
-            <nav className="contactus-nav-container">
+            {/* <nav className="contactus-nav-container">
                 <div className="contactus-nav-element-container">
                     <div className='contactus-nav-element-left'>
                         <div className='contactus-nav-logo' onClick={goToHomePage}></div>
@@ -73,7 +74,8 @@ function ShippingPolicy() {
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav> */}
+             <NavBar />
             {/* -----------------------------------navbar part end------------------------------------------- */}
             {/* ---------------------------------------feedback Start--------------------------------------------- */}
             <main className="shipping-container">

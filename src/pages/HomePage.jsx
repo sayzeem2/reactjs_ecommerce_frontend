@@ -14,7 +14,7 @@ import instaLogo from '../assets/instagram_icon.png'
 import twoPartLeftImage from '../assets/two-part-left-image.png'
 import twoPartRightImage from '../assets/two-part-right-image.png'
 import Footer from '../components/Footer';
-
+import NavBar from '../components/NavBar';
 
 function HomePage() {
     const navigate = useNavigate();
@@ -305,7 +305,7 @@ function HomePage() {
         <div>
             {/* ------------------------------------------------------------------------------------------------------------------ */}
             {/* -------------------------------------------navbar part------------------------------------------------------ */}
-            <nav className="home-nav-container">
+            {/* <nav className="home-nav-container">
                 <div className="home-nav-element-container">
                     <div className='home-nav-element-left'>
                         <div className='home-nav-logo' onClick={goToHomePage}></div>
@@ -329,8 +329,8 @@ function HomePage() {
                         </div>
                     </div>
                 </div>
-            </nav>
-
+            </nav> */}
+            <NavBar />
             {/* -------------------------------------------navbar part------------------------------------------------------ */}
             {/*  ---------------------------------------Hero Section Start-------------------------------------------------  */}
             <div className='home-hero-image-container'>
@@ -603,6 +603,8 @@ function HomePage() {
                                 {limelight.slice(0, 5).map((item) => (
                                     <div key={item.id} className='limelight-card-setup'>
                                         <div className='limelight-card-image-wrapper'>
+                                            <Heart className='limelight-wishlist-btn' />
+
                                             <img
                                                 src={item.image}
                                                 alt={item.title}

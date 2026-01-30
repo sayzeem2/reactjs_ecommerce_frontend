@@ -8,6 +8,7 @@ import cornerStoreLogo from '../assets/TheCornerStoreLogo.png'
 import { useNavigate } from 'react-router-dom'
 import { Badge, BadgePlus } from 'lucide-react'
 import Footer from '../components/Footer';
+import NavBar from '../components/NavBar'
 
 function TermsConditions() {
     function valuetext(value) {
@@ -92,7 +93,7 @@ function TermsConditions() {
     return (
         <div>
             {/* -----------------------------------navbar part start------------------------------------------- */}
-            <nav className="terms-nav-container">
+            {/* <nav className="terms-nav-container">
                 <div className="terms-nav-element-container">
                     <div className='terms-nav-element-left'>
                         <div className='terms-nav-logo' onClick={goToHomePage}></div>
@@ -116,7 +117,8 @@ function TermsConditions() {
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav> */}
+            <NavBar />
             {/* -----------------------------------navbar part end------------------------------------------- */}
 
             {/* ---------------------------------------Terms Mid Start--------------------------------------------- */}

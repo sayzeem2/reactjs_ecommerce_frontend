@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./SignInPage.css"
 import { useNavigate } from 'react-router-dom'
+import { Button, InputLabel, MenuItem, Select } from '@mui/material';
 
 function SignInPage() {
     const navigate = useNavigate();
@@ -16,6 +17,8 @@ function SignInPage() {
     const goToResetPassword = () => {
         navigate("/reset-password")
     }
+
+
     return (
         <div className='signin-page-main'>
             {/* -------------------------------------------navbar part------------------------------------------------------ */}
@@ -27,6 +30,9 @@ function SignInPage() {
                             <a href="#" className='signin-nav-search-img'></a>
                             <input type="text" className='signin-nav-search-input' placeholder='Search' />
                         </div>
+                        <div className='signin-nav-language'>
+
+                        </div>
                         <select name="signin-nav-language" id="signin-nav-language" className='signin-nav-language-sel'>
                             <option value="English">English(United States)</option>
                             <option value="Hindi">Hindi(India)</option>
@@ -35,7 +41,9 @@ function SignInPage() {
                     <div className='signin-nav-element-right'>
                         <div className='signin-nav-button-container'>
                             <a href="#" className='signin-nav-login-btn' onClick={goToSignIn}>Login</a>
+
                             <a href="#" className='signin-nav-signup-btn' onClick={goToSignUp}>Sign Up</a>
+
                         </div>
                     </div>
                 </div>
@@ -105,7 +113,15 @@ function SignInPage() {
                                         <a href="#" className='hidden-forgot' onClick={goToResetPassword}>Forgot your password</a>
                                     </div>
                                     <div className='right-button-container'>
-                                        <a href="#" className='right-login-btn' onClick={goToHomePage}>Sign in</a>
+                                        <a href="#" className='right-login-btn' onClick={goToHomePage}>Sign In</a>
+
+                                        {/* <Button
+                                            variant='contained'
+                                            className='right-login-btn'
+                                            onClick={goToHomePage}
+                                            sx={{ backgroundColor: '#8a33fd' }}
+                                        >Sign in</Button> */}
+
                                         <a href="#" className='right-signup-btn'>Don't have an account? <span onClick={goToSignUp}>Sign up</span></a>
                                     </div>
                                 </div>

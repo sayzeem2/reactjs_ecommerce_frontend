@@ -149,29 +149,424 @@ body {
 
 .products-list-main-container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
 
 .products-list-content-main-container {
+    display: flex;
+    flex-direction: row;
     width: 80%;
     height: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .products-list-left-main-container {
     width: 25%;
     height: 100%;
-    background-color: yellow;
+    border-left: 3px solid rgba(1, 1, 1, 0.1);
+    border-right: 3px solid rgba(1, 1, 1, 0.1);
+    /* background-color: yellow; */
 }
 
 .products-list-right-main-container {
     width: 75%;
     height: 100%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
+
+/* ---------------------------filter section Start----------------------------------------------------------- */
+.products-list-filter-container {
+    width: 100%;
+    height: 60px;
+    border-bottom: 3px solid rgba(1, 1, 1, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.products-list-filter-span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #665b64;
+}
+
+/* ---------------------------filter section End----------------------------------------------------------- */
+/* ---------------------------Clothes Type section Start ---------------------------------------------------- */
+.products-list-clothes-type-container {
+    border-bottom: 3px solid rgba(1, 1, 1, 0.1);
+
+}
+
+.products-list-clothes-type-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 50px;
+    color: #665b64;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.products-list-clothes-type-inner-container {
+    margin: 40px 0;
+}
+
+/* ---------------------------Clothes Type section End ---------------------------------------------------- */
+/* ---------------------------Clothes Price section Start-------------------------------------------------- */
+
+.products-list-price-container {
+    padding: 7px 0;
+
+}
+
+.products-list-slider-main-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.products-list-slider-main {
+    padding: 0 40px;
+    border-bottom: 3px solid rgba(1, 1, 1, 0.1);
+}
+
+.products-list-slider-expand-icon {
+    scale: 1.3;
+}
+
+.products-list-slider-input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-list-slider-input {
+    width: 130px;
+}
+
+.products-list-slider-input .MuiInputLabel-root.Mui-disabled {
+    font-weight: 600;
+
+}
+
+.products-list-slider-input label {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+/* ---------------------------Clothes Price section End-------------------------------------------------- */
+/* ---------------------------Clothes Color section Start-------------------------------------------------- */
+
+.products-list-color-main {
+    padding: 0 30px;
+    border-bottom: 3px solid rgba(1, 1, 1, 0.1);
+}
+
+.products-list-color-main-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.products-list-color-expand-icon {
+    scale: 1.3;
+}
+
+.products-list-color-pallette-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    width: 75px;
+    height: 80px;
+    margin: 10px 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.products-list-color-pallette-container:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.products-list-color-pallette-span {
+    font-weight: 500;
+}
+
+/* ---------------------------Clothes Color section End-------------------------------------------------- */
+/* ---------------------------Clothes Size section Start-------------------------------------------------- */
+
+.products-list-size-main {
+    padding: 0 25px;
+    border-bottom: 3px solid rgba(1, 1, 1, 0.1);
+}
+
+.products-list-size-main-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.products-list-size-expand-icon {
+    scale: 1.3;
+}
+
+.products-list-size-pallette-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 100px;
+    height: 55px;
+
+}
+
+.products-list-size-pallette-span {
+    width: 80px;
+    height: 30px;
+    border: 1px solid rgba(1, 1, 1, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.1s ease-in-out;
+}
+
+.products-list-color-pallette-box {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.products-list-size-pallette-span:hover {
+    cursor: pointer;
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+/* ---------------------------Clothes Size section End-------------------------------------------------- */
+/* ---------------------------Dress Style section Start-------------------------------------------------- */
+
+.dress-style-main {
+    border-bottom: 3px solid rgba(1, 1, 1, 0.1);
+}
+
+.dress-style-main-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dress-style-expand-icon {
+    scale: 1.3;
+}
+
+.dress-style-pallette-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    width: 100px;
+    height: 55px;
+
+}
+
+.dress-style-pallette-span {
+    width: 70px;
+    height: 30px;
+    border: 1px solid rgba(1, 1, 1, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.1s ease-in-out;
+}
+
+.dress-style-pallette-span:hover {
+    cursor: pointer;
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+/* .dress-style-container {
+    border-bottom: 3px solid rgba(1, 1, 1, 0.1);
+} */
+
+.dress-style-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 50px;
+    color: #665b64;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.dress-style-inner-container {
+    margin: 40px 0;
+}
+
+/* ---------------------------Dress Style section End-------------------------------------------------- */
+/* ----------------------------------------right-cards Section start------------------------------------------ */
+.right-cards-main-container {
+    margin: 30px 30px 0 70px;
+}
+
+.right-cards-main-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.right-cards-heading-right-New {
+    color: #8a33fd;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.right-cards-heading-right-recommended {
+    padding: 0 30px;
+}
+
+.right-cards-heading-left-text,
+.right-cards-heading-right-recommended {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.right-cards-grid-main-container {
+    display: flex;
+}
+
+.right-cards-item-grid {
+    display: flex;
+    gap: 30px;
+    row-gap: 100px;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.right-cards-card-setup {
+    width: 330px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+
+}
+
+.right-cards-card-setup:hover {
+    transform: scale(1.03);
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); */
+    cursor: pointer;
+}
+
+.right-cards-card-setup:hover .right-cards-saving-image {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.right-cards-card-setup:hover .right-cards-card-price-bg {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.right-cards-card-setup:hover .right-cards-card-title-text-container {
+    letter-spacing: 1px;
+}
+
+.right-cards-card-image-wrapper {
+    width: 100%;
+    /* height: 100%; */
+    aspect-ratio: 3 / 4;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.right-cards-saving-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+
+}
+
+.right-cards-card-title-text-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.right-cards-card-title-text-container {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.right-cards-card-title-span {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+
+.right-cards-card-subtitle-span {
+    color: #80727e;
+    font-size: 0.875rem;
+    padding-top: 4px;
+    font-weight: 500;
+}
+
+.right-cards-card-price-bg {
+    padding: 5px 15px;
+    background-color: #f3f2f3;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.right-cards-card-price-bg span {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.right-cards-wishlist-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.1s ease;
+}
+
+.right-cards-wishlist-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* ----------------------------------------right-cards Section end------------------------------------------ */
 /* ---------------------------------------Products List Content End--------------------------------------------- */
 
 /* ---------------------------------------feedback End--------------------------------------------- */
