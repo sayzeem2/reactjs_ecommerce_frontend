@@ -438,9 +438,12 @@ body {
     padding: 0 10px;
 }
 
-.right-cards-heading-right-recommended {
-    padding: 0 30px;
-}
+/* .right-cards-heading-right-recommended {
+
+    padding: 0 20px;
+    color: #111;
+
+} */
 
 .right-cards-heading-left-text,
 .right-cards-heading-right-recommended {

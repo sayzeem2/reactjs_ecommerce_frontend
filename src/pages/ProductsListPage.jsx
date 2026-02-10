@@ -2,23 +2,25 @@ import React, { useState } from 'react'
 import "./ProductsListPage.css"
 import { useNavigate } from 'react-router-dom'
 import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
 import { ChevronRight, Heart, SlidersVertical } from 'lucide-react';
 import Typography from '@mui/material/Typography';
 import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Slider from '@mui/material/Slider';
-import { Box, TextField } from '@mui/material';
-import NavBar from '../components/NavBar';
+import { Box, Button, TextField } from '@mui/material';
 
 
 function ProductsListPage() {
 
     const navigate = useNavigate();
-    const goToHomePage = () => {
-        navigate("/home-page")
+    // const goToHomePage = () => {
+    //     navigate("/home-page")
+    // }
+    const goToProductDetailsPage = () => {
+        navigate("/product-details")
     }
     const womenClothing = [
         {
@@ -58,7 +60,7 @@ function ProductsListPage() {
         },
         {
             id: 6,
-            title: "Blue Elegant Salwar Kameez Set",
+            title: "Blue Salwar Kameez Set",
             subtitle: "ZS's Brand",
             price: '$237.00',
             image: 'https://images.unsplash.com/photo-1768289222309-23f768607538?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Njh8fHxlbnwwfHx8fHw%3D'
@@ -254,7 +256,7 @@ function ProductsListPage() {
                     </div>
                 </div>
             </nav> */}
-             <NavBar />
+            <NavBar />
             {/* -----------------------------------navbar part end------------------------------------------- */}
             {/* ---------------------------------------Products List Content Start--------------------------------------------- */}
             <div className='products-list-main-container'>
@@ -438,15 +440,17 @@ function ProductsListPage() {
                                 <div className='right-cards-main-text'>
                                     <span className='right-cards-heading-left-text'>Women's Clothing</span>
                                     <div className='right-cards-heading-right-text-container'>
-                                        <span className='right-cards-heading-right-New'>New</span>
-                                        <span className='right-cards-heading-right-recommended'>Recommended</span>
+                                        {/* <span className='right-cards-heading-right-New'>New</span> */}
+                                        <Button variant='text' sx={{ textTransform: 'none', color: '#8a33fd', fontSize: '1.2rem', fontWeight: '600', }} className='right-cards-heading-right-New'>New</Button>
+                                        {/* <span className='right-cards-heading-right-recommended'>Recommended</span> */}
+                                        <Button variant='text' sx={{ textTransform: 'none', ml: '20px', color: 'black', fontSize: '1.2rem', fontWeight: '600', }} className='right-cards-heading-right-recommended'>Recommended</Button>
 
                                     </div>
                                 </div>
                             </div>
 
                             <div className='right-cards-grid-main-container'>
-                                <div className="right-cards-item-grid">
+                                <div className="right-cards-item-grid" onClick={goToProductDetailsPage}>
                                     {womenClothing.slice(0, 13).map((item) => (
                                         <div key={item.id} className='right-cards-card-setup'>
                                             <div className='right-cards-card-image-wrapper'>

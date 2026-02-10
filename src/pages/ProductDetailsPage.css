@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------------------------Product Details Content Start--------------------------------------------- */
+
+.product-details-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-details-hero-content-container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ---------------------------------------Product Details Left Content Start--------------------------------------------- */
+
+.product-details-hero-left-container {
+    width: 50%;
+    height: 100%;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ---------------------------------------Product Details Left Scroller Content Start--------------------------------------------- */
+
+
+.product-details-hero-left-scroller-container {
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-details-arrow-up-container,
+.product-details-arrow-down-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-details-arrow-up-container-active,
+.product-details-arrow-down-container-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+
+.product-details-arrow-down-container:hover,
+.product-details-arrow-up-container:hover {
+    cursor: pointer;
+}
+
+.product-details-hero-left-image-scroller-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-details-hero-left-image-container {
+    width: 80%;
+    height: 100%;
+
+}
+
+.product-details-scroller-image-container {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+    border-radius: 20px;
+
+}
+
+.product-details-scroller-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: 50% 10%;
+
+}
+
+.product-details-scroller-image-active {
+    padding: 4px;
+    border: 1px solid black;
+}
+
+.product-details-scroller-image:hover {
+    cursor: pointer;
+}
+
+.product-details-arrow {
+    transform: scale(1.5);
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.2s ease;
+}
+
+.product-details-arrow-active {
+    transform: scale(1.5);
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.product-details-arrow:hover,
+.product-details-arrow-active:hover {
+
+    transform: scale(1.6);
+}
+
+/* ---------------------------------------Product Details Left Scroller Content End--------------------------------------------- */
+/* ---------------------------------------Product Details Left Main Image Start--------------------------------------------- */
+
+.product-details-hero-main-image-container {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+/* ---------------------------------------Product Details Left Main Image End--------------------------------------------- */
+
+/* ---------------------------------------Product Details Left Content End--------------------------------------------- */
+
+/* ---------------------------Clothes Right Navigation Start-------------------------------------------------- */
+
+.product-details-hero-right-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+.product-details-hero-right-content-container {
+    width: 90%;
+    height: 92%;
+}
+
+.product-details-hero-right-navigation-links-container {
+    display: flex;
+    align-items: center;
+}
+
+.product-details-hero-right-navigation-links {
+    text-decoration: none;
+    color: #807D7E;
+}
+
+/* ---------------------------Clothes Right Navigation End-------------------------------------------------- */
+
+/* ---------------------------Clothes Right Heading Start-------------------------------------------------- */
+
+.product-details-hero-right-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-right: 200px;
+    padding-top: 20px;
+    line-height: 50px;
+}
+
+/* ---------------------------Clothes Right Heading End-------------------------------------------------- */
+
+/* ---------------------------Clothes Right Ratings And Comments Start-------------------------------------------------- */
+
+.product-details-hero-right-ratings {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.product-details-hero-right-comments {
+    display: flex;
+    align-items: center;
+}
+
+.product-details-hero-right-comments span {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.product-details-hero-right-comments-links {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #807D7E;
+}
+
+/* ---------------------------Clothes Right Ratings And Comments End-------------------------------------------------- */
+
+/* ---------------------------Clothes Right Size section Start-------------------------------------------------- */
+.product-details-hero-right-size-select-container {
+    margin-top: 25px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+
+}
+
+.product-details-hero-right-size-select-container a {
+    display: flex;
+}
+
+.product-details-select-size-span {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.product-details-select-size-link {
+    color: #807D7E;
+    margin-left: 20px;
+}
+
+
+
+.product-details-size-main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.product-details-size-pallette-container {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #807D7E;
+    color: #807D7E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+
+}
+
+.product-details-size-pallette-container-active {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.product-details-size-pallette-span {
+    padding: 5px;
+}
+
+.product-details-size-pallette-container:hover,
+.product-details-size-pallette-container-active:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* ---------------------------Clothes Right Size section End-------------------------------------------------- */
+/* ---------------------------Clothes Right Color section Start-------------------------------------------------- */
+.product-details-color-main-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.product-details-color-main-content-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.product-details-color-pallette-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+
+}
+
+.product-details-color-pallette-container-active {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+
+}
+
+.product-details-color-pallette-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.product-details-color-pallette-container:hover,
+.product-details-color-pallette-container-active:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* ---------------------------Clothes Right Color section End-------------------------------------------------- */
+/* ---------------------------Clothes Right Price Buttons section Start-------------------------------------------------- */
+.product-details-price-btn-main-container {
+    margin-top: 25px;
+}
+
+.product-details-price-btn-container-hr {
+    width: 90%;
+    margin-top: 40px;
+    color: #807D7E;
+}
+
+/* ---------------------------Clothes Right Price Buttons section End-------------------------------------------------- */
+/* ---------------------------Product Details Right Info Start-------------------------------------------------- */
+.product-details-right-info-main-container {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 30px 0;
+}
+
+.product-details-right-info-content-container {
+    /* border: 1px solid red; */
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.product-details-right-info-span {
+    width: 50%;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.product-details-right-info-icon {
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #efefef;
+}
+
+/* ---------------------------Product Details Right Info End-------------------------------------------------- */
+
+/* ---------------------------------------Product Details Content End--------------------------------------------- */
+/* ---------------------------------------Product Details Description Content Start-------------------------------------------- */
+.product-details-description-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-details-description-left-main-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+
+.product-details-description-main-text-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.product-details-description-box {
+
+    width: 5px;
+    height: 25px;
+    border-radius: 4px;
+    margin-right: 20px;
+    background-color: #8a33fd;
+}
+
+.product-details-description-heading-text {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.product-details-description-user-comment-tab {
+    background-color: #8a33fd;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    margin-left: 10px;
+}
+
+.product-details-description-quest-answer-tab {
+
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    margin-left: 10px;
+}
+
+.product-details-description-left-info-container {
+    width: 93%;
+    height: 200px;
+    background-color: #efefef;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.product-details-description-left-info-container-fabric,
+.product-details-description-left-info-container-pattern,
+.product-details-description-left-info-container-fit,
+.product-details-description-left-info-container-neck,
+.product-details-description-left-info-container-sleeve,
+.product-details-description-left-info-container-style {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product-details-description-left-info-vertical-line-1 {
+    position: absolute;
+    background-color: #bbbaba;
+    height: 90%;
+    width: 0.5px;
+    left: 220px;
+}
+
+.product-details-description-left-info-vertical-line-2 {
+    position: absolute;
+    background-color: #bbbaba;
+    height: 90%;
+    width: 0.5px;
+    left: 440px;
+}
+
+.product-details-description-left-info-vertical-line-3 {
+    position: absolute;
+    background-color: #bbbaba;
+    height: 0.5px;
+    width: 100%;
+    top: 50%;
+}
+
+.product-details-description-left-info-span {
+    color: #807D7E;
+    margin-bottom: 5px;
+}
+
+.product-details-description-right-main-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+    z-index: 5;
+}
+
+.product-details-description-right-image {
+    border-radius: 40px;
+    width: 90%;
+    height: 100%;
+}
+
+.product-details-description-right-image-timer {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.product-details-description-right-image-name {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ----------------------------------------Product details similar start------------------------------------------ */
+/* ----------------------------------------Product details similar start------------------------------------------ */
+.product-details-description-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.product-details-similar-main-text-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.product-details-similar-box {
+
+    width: 5px;
+    height: 25px;
+    border-radius: 4px;
+    margin-right: 20px;
+    background-color: #8a33fd;
+}
+
+.product-details-similar-heading-text {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.products-details-similar-content-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.products-details-similar-card-item-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.products-details-similar-card-setup {
+    width: 100%;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.products-details-similar-card-setup:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.products-details-similar-card-setup:hover .products-details-similar-saving-image {
+    transform: scale(1.08);
+}
+
+.products-details-similar-card-setup:hover .products-details-similar-card-price-bg {
+    transform: scale(1.08);
+}
+
+.products-details-similar-card-setup:hover .products-details-similar-card-title-text-container {
+    letter-spacing: 1px;
+}
+
+.products-details-similar-card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.products-details-similar-card-saving-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.products-details-similar-card-title-text-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.products-details-similar-card-title-text-container {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.products-details-similar-card-title-span {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.products-details-similar-card-subtitle-span {
+    color: #807D7E;
+    font-size: 0.875rem;
+    padding-top: 4px;
+    font-weight: 500;
+}
+
+.products-details-similar-card-price-bg {
+    padding: 5px 15px;
+    background-color: #f3f2f3;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+}
+
+.products-details-similar-card-price-bg span {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.products-details-similar-card-wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    padding: 7px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.1s ease;
+}
+
+.products-details-similar-card-wishlist-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Responsive breakpoints */
+/* @media (max-width: 1200px) {
+    .products-details-similar-card-item-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .products-details-similar-card-item-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products-details-similar-card-item-grid {
+        grid-template-columns: 1fr;
+    }
+} */
+
+/* ----------------------------------------Product Details Similar End------------------------------------------ */
+/* ---------------------------------------Product Details Description Content End-------------------------------------------- */
