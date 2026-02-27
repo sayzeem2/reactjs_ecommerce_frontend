@@ -17,7 +17,9 @@ import CartPage from './pages/CartPage';
 import Error404Page from './pages/Error404Page';
 import EmptyCart from './pages/EmptyCart';
 import CheckOutPage from './pages/CheckOutPage';
-
+import OrderConfirmed from './pages/OrderConfirmed';
+import UserAccountPage from './pages/UserAccountPage';
+// import UserOrdersPage from './pages/UserOrdersPage';
 function App() {
   return (
     <Router>
@@ -28,7 +30,11 @@ function App() {
         <Route path="/home-page" element={<HomePage />} />
         <Route path="/products-list" element={<ProductsListPage />} />
         <Route path="/product-details" element={<ProductDetailsPage />} />
+        <Route path="/user-account" element={<UserAccountPage />} />
         <Route path="/contact-details" element={<ContactDetailsPage />} />
+        {/* <Route path="/user-order" element={<UserOrdersPage />} /> */}
+
+
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/shipping-policy" element={<ShippingPolicy />} />
         <Route path="/contact-us" element={<ContactUs />} />
@@ -38,6 +44,7 @@ function App() {
         <Route path="/404-error" element={<Error404Page />} />
         <Route path="/empty-cart" element={<EmptyCart />} />
         <Route path="/checkout-page" element={<CheckOutPage />} />
+        <Route path="/order-confirmed" element={<OrderConfirmed />} />
 
 
       </Routes>

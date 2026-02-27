@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -12,138 +10,213 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.signin-page-main {
-    height: 1067px;
-}
 
 /* ---------------------------------------navbar part start------------------------------------------------------- */
-.contact-details-nav-container {
-    display: flex;
+.contact-details-page-main-container {
     width: 100%;
-    height: 111px;
-    border-bottom: 1px solid #80727e;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.contact-details-nav-element-container {
-    width: 1300px;
-    height: 46px;
-    margin-left: 100px;
+.contact-details-page-content-container {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.contact-details-right-main-container {
+    width: 75%;
+    margin-left: 20px;
+    margin-bottom: 100px;
+}
+
+.contact-details-right-switch-container {
     display: flex;
+    flex-direction: column;
+}
+
+.contact-details-right-heading-info-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.contact-details-right-heading-contact-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.contact-details-right-name-main-container,
+.contact-details-right-email-main-container,
+.contact-details-right-phone-main-container,
+.contact-details-right-password-main-container {
+    margin-top: 30px;
+}
+
+.contact-details-right-name-span,
+.contact-details-right-email-span,
+.contact-details-right-phone-span,
+.contact-details-right-password-span {
+    color: #807D7E;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contact-details-right-name-input-btn-container,
+.contact-details-right-email-input-btn-container,
+.contact-details-right-phone-input-btn-container,
+.contact-details-right-password-input-btn-container {
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
 }
 
-.contact-details-nav-element-left {
+.contact-details-right-name-input,
+.contact-details-right-email-input,
+.contact-details-right-phone-input,
+.contact-details-right-password-input {
+    border: none;
+    font-size: 1.2rem;
+    width: 90%;
+    height: 30px;
+}
+
+.contact-details-right-name-input:focus,
+.contact-details-right-email-input:focus,
+.contact-details-right-phone-input:focus,
+.contact-details-right-password-input:focus {
+    outline: none;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+.contact-details-right-name-input::placeholder,
+.contact-details-right-email-input::placeholder,
+.contact-details-right-phone-input::placeholder,
+.contact-details-right-password-input::placeholder {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contact-details-right-name-btn,
+.contact-details-right-email-btn,
+.contact-details-right-phone-btn,
+.contact-details-right-password-btn,
+.contact-details-right-address-new-btn {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.contact-details-right-name-btn:hover,
+.contact-details-right-email-btn:hover,
+.contact-details-right-phone-btn:hover,
+.contact-details-right-password-btn:hover,
+.contact-details-right-address-new-btn:hover {
+    cursor: pointer;
+}
+
+.contact-details-right-divider-hr {
+    margin-top: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 0.1px;
+}
+
+.contact-details-right-phone-input::-webkit-outer-spin-button,
+.contact-details-right-phone-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contact-details-right-address-main-container {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-details-right-address-heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.contact-details-right-address-box-main-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-details-right-address-box-container {
+    width: 48.5%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-details-right-address-box-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.contact-details-right-address-box-name-span {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.contact-details-right-address-box-phone-span {
+    color: #807D7E;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.contact-details-right-address-box-address-span {
+    color: #807D7E;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.contact-details-right-address-box-home-button-container {
     display: flex;
     flex-direction: row;
 }
 
-.contact-details-nav-logo {
-    background-image: url("/src/assets/Logo.png");
-    width: 100px;
-    height: 50px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-.contact-details-nav-logo:hover {
+.contact-details-right-address-box-home-button,
+.contact-details-right-address-box-billing-button {
+    padding: 10px 25px;
+    border: 2.2px solid #807D7E;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #807D7E;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    margin-top: 25px;
     cursor: pointer;
 }
 
-.contact-details-nav-categories-container {
-    display: flex;
-    align-items: center;
-    margin: 0 20px 0 100px;
+.contact-details-right-address-box-billing-button {
+    margin-left: 20px;
+    cursor: pointer;
 }
 
-.contact-details-nav-categories-men,
-.contact-details-nav-categories-women,
-.contact-details-nav-categories-combos,
-.contact-details-nav-categories-joggers {
-    text-decoration: none;
-    margin: 0 25px 0 25px;
-    color: #807D7E;
+.contact-details-right-address-box-remove-button-container {
+    margin-top: 25px;
+}
+
+.contact-details-right-address-box-remove-button,
+.contact-details-right-address-box-edit-button,
+.contact-details-right-address-box-default-button {
+    font-size: 1.2rem;
     font-weight: 500;
-    font-size: 1.4rem;
-}
-
-.contact-details-nav-categories-shop {
-    text-decoration: none;
-    margin: 0 17px 0 17px;
-    color: #373536;
-    font-weight: 500;
-    font-size: 1.4rem;
-}
-
-.contact-details-nav-search-container {
-    display: flex;
-    background-color: #f6f6f6;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 46px;
-    margin-left: 100px;
-}
-
-.contact-details-nav-search-input {
-    margin-left: 7px;
-    width: 350px;
-    height: 22px;
-    background-color: transparent;
     border: none;
-    font-family: sans-serif;
-    font-size: 0.85rem;
-    font-weight: bold;
-    color: #80727e;
+    margin-right: 25px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    margin-left: 10px;
 }
-
-.contact-details-nav-search-input:focus {
-    outline: none;
-    width: 350px;
-}
-
-.contact-details-nav-search-img {
-    background-image: url("/src/assets/search.png");
-    margin-left: 17px;
-    width: 20px;
-    height: 20px;
-}
-
-.contact-details-nav-search-container:focus-within .nav-search-img {
-    display: none;
-}
-
-.contact-details-nav-icons-container {
-    position: absolute;
-    right: 170px;
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    margin: 0 30px 0 30px;
-}
-
-.contact-details-nav-wishlist-icon,
-.contact-details-nav-account-icon,
-.contact-details-nav-shoppingCart-icon {
-    width: 44px;
-    height: 44px;
-
-}
-
-.contact-details-nav-wishlist-icon {
-    background-image: url("/src/assets/Wishlist_icon.png");
-}
-
-.contact-details-nav-account-icon {
-    background-image: url("/src/assets/Account_icon.png");
-}
-
-.contact-details-nav-shoppingCart-icon {
-    background-image: url("/src/assets/Shopping_Cart_icon.png");
-}
-
-/* ---------------------------------------navbar part end------------------------------------------------------- */

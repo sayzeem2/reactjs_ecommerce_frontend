@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ---------------------------------------navbar part start------------------------------------------------------- */
+
+
+.user-orders-right-switch-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-orders-right-heading-info-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* -------------------------------------------------Tabs Container Start------------------------------------------------------ */
+.user-orders-right-divider-hr {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 0.1px;
+}
+
+/* .user-orders-right-tabs-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+.user-orders-right-tabs-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-orders-right-tabs-active-container,
+.user-orders-right-tabs-cancelled-container,
+.user-orders-right-tabs-completed-container {
+    padding: 15px 60px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.user-orders-right-tabs-active-container-active,
+.user-orders-right-tabs-cancelled-container-active,
+.user-orders-right-tabs-completed-container-active {
+    cursor: pointer;
+    padding: 15px 60px;
+    border-bottom: 3px solid black;
+    background-color: #f5f5f5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.user-orders-right-tabs-active-span,
+.user-orders-right-tabs-cancelled-span,
+.user-orders-right-tabs-completed-span {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.user-orders-right-tab-contents-main-container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* -------------------------------------------------active tab start------------------------------------------------------ */
+/* .user-orders-right-active-main-container {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.user-orders-right-active-grey-main-container {
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.user-orders-right-active-order-number-span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.user-orders-right-active-order-date-status-container,
+.user-orders-right-active-delivery-date-payment-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.user-orders-right-active-order-date-span-wrapper,
+.user-orders-right-active-order-status-span-wrapper,
+.user-orders-right-active-delivery-date-span-wrapper,
+.user-orders-right-active-payment-span-wrapper {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #807D7E;
+}
+
+.user-orders-right-active-order-date-span,
+.user-orders-right-active-order-status-span,
+.user-orders-right-active-delivery-date-span,
+.user-orders-right-active-payment-span {
+    font-size: 1rem;
+    color: #cdcccc;
+}
+
+.user-orders-right-active-product-main-container {
+    width: 100%;
+
+}
+
+.user-orders-right-active-product-image-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-orders-right-active-product-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 30px 0;
+    object-fit: cover;
+    object-position: 20% 30%;
+}
+
+.user-orders-right-active-product-details-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.user-orders-right-active-product-details-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-orders-right-active-product-details-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.user-orders-right-active-product-details-color-wrapper,
+.user-orders-right-active-product-details-qty-wrapper,
+.user-orders-right-active-product-details-total-wrapper {
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.user-orders-right-active-product-details-color,
+.user-orders-right-active-product-details-qty,
+.user-orders-right-active-product-details-total {
+    font-size: 0.9rem;
+    color: #cdcccc;
+}
+
+.user-orders-right-active-product-details-detail-btn {
+    background-color: #8a33fd;
+    color: white;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    border: none;
+    transition: all 0.1s ease;
+}
+
+.user-orders-right-active-product-details-detail-btn:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+} */
+
+
+
+/* -------------------------------------------------active tab end------------------------------------------------------ */
+
+/* -------------------------------------------------Tabs Container End------------------------------------------------------ */

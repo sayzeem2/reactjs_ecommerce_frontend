@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ---------------------------------------navbar part start------------------------------------------------------- */
+.contact-details-page-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-details-page-content-container {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.contact-details-navigation-links-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-details-navigation-links {
+    font-weight: 600;
+    text-decoration: none;
+    color: #807D7E;
+}
+
+.contact-details-navigation-links-active {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-details-left-main-container {
+    width: 25%;
+}
+
+.contact-details-content-main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-details-left-heading-main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details-left-heading-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-details-left-heading-box {
+    width: 5px;
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 20px;
+    background-color: #8a33fd;
+}
+
+.contact-details-left-heading-text {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.contact-details-left-heading-text-info {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #807D7E;
+}
+
+.contact-details-left-sidebar-main-container {
+    width: 90%;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+
+.contact-details-left-sidebar-order-button-container,
+.contact-details-left-sidebar-wishlist-button-container,
+.contact-details-left-sidebar-info-button-container,
+.contact-details-left-sidebar-signout-button-container {
+    padding: 15px 15px 15px 50px;
+    margin: 15px 0;
+    color: #807D7E;
+    display: flex;
+    align-items: center;
+    border-left: 3px solid transparent;
+}
+
+.contact-details-left-sidebar-order-button-container-active,
+.contact-details-left-sidebar-wishlist-button-container-active,
+.contact-details-left-sidebar-info-button-container-active,
+.contact-details-left-sidebar-signout-button-container-active {
+    padding: 15px 15px 15px 50px;
+    margin: 15px 0;
+    color: #807D7E;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    border-left: 3px solid black;
+}
+
+.contact-details-left-sidebar-order-button-container:hover,
+.contact-details-left-sidebar-wishlist-button-container:hover,
+.contact-details-left-sidebar-info-button-container:hover,
+.contact-details-left-sidebar-signout-button-container:hover,
+.contact-details-left-sidebar-order-button-container-active:hover,
+.contact-details-left-sidebar-wishlist-button-container-active:hover,
+.contact-details-left-sidebar-info-button-container-active:hover,
+.contact-details-left-sidebar-signout-button-container-active:hover {
+    cursor: pointer;
+}
+
+.contact-details-left-sidebar-order-button,
+.contact-details-left-sidebar-wishlist-button,
+.contact-details-left-sidebar-info-button,
+.contact-details-left-sidebar-signout-button {
+    margin-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+.signout-modal-background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signout-modal-main-box-container {
+    width: 700px;
+    height: 450px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signout-modal-image-container {
+    width: 250px;
+    height: 250px;
+
+}
+
+.signout-modal-main-heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signout-modal-main-heading-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #254336;
+}
+
+.signout-modal-main-heading-info {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.signout-modal-main-button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.signout-modal-yes-button,
+.signout-modal-no-button {
+    width: 180px;
+    background-color: #8a33fd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.signout-modal-yes-button:hover,
+.signout-modal-no-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    letter-spacing: 1px;
+}

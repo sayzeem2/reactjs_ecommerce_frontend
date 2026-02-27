@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import "./ResetPasswordPage.css"
 import { useNavigate } from 'react-router-dom'
+// import LogoImg from '../assets/Aurora_logo.svg'
+
+import { ShoppingCartOutlined, FavoriteBorderOutlined, VisibilityOff, Google, X, Search } from '@mui/icons-material'
+import NavBarGuest from '../components/GuestComponents/NavBarGuest'
+
 
 function ResetPasswordPage() {
     const navigate = useNavigate();
@@ -8,10 +13,21 @@ function ResetPasswordPage() {
     const goToSignIn = () => {
         navigate("/")
     }
+    const goToAboutPage = () => {
+        navigate("/about-us")
+    }
     const goToSignUp = () => {
         navigate("/signup")
     }
-    
+    const goToContactPage = () => {
+        navigate("/contact-us")
+    }
+    const goToFaqPage = () => {
+        navigate("/FAQ")
+    }
+    const goToTermsPage = () => {
+        navigate("/terms-conditions")
+    }
     const sendToEmailVerifyPage = () => {
         setCurrentView(1)
     }
@@ -24,35 +40,18 @@ function ResetPasswordPage() {
     return (
         <div className='reset-page-main'>
             {/* -------------------------------------------navbar part------------------------------------------------------ */}
-            <nav className="reset-nav-container">
-                <div className="reset-nav-element-container">
-                    <div className='reset-nav-element-left'>
-                        <div className='reset-nav-logo' onClick={goToSignIn}></div>
-                        <div className='reset-nav-search-container'>
-                            <a href="#" className='reset-nav-search-img'></a>
-                            <input type="text" className='reset-nav-search-input' placeholder='Search' />
-                        </div>
-                        <select name="nav-language" id="nav-language" className='reset-nav-language-sel'>
-                            <option value="English">English(United States)</option>
-                            <option value="Hindi">Hindi(India)</option>
-                        </select>
-                    </div>
-                    <div className='reset-nav-element-right'>
-                        <div className='reset-nav-button-container'>
-                            <a href="#" className='reset-nav-login-btn' onClick={goToSignIn}>Login</a>
-                            <a href="#" className='reset-nav-signup-btn' onClick={goToSignUp}>Sign Up</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
 
+            <NavBarGuest />
             {/* -------------------------------------------navbar part------------------------------------------------------ */}
             {/* -------------------------------------------Sign in Left part------------------------------------------------ */}
             <div>
-                <div className='mid-container'>
-                    <div className='reset-left'>
-                        <div className='reset-image-overlay'>
-                            <img src="https://images.unsplash.com/photo-1631832255415-8583788a11cb?q=80&w=701&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="left image" className='reset-image' />
+                <div className='reset-mid-container'>
+                    <div className='reset-mid-left-image-container'>
+                        <div className='reset-mid-left-image-overlay'>
+                            {/* <img src="https://i.pinimg.com/1200x/25/d5/e8/25d5e8ca806da40e49cde7180dc2a5ca.jpg" */}
+                            <img src="https://i.pinimg.com/1200x/76/eb/93/76eb93c911dc13a85ba932e46a5bb637.jpg"
+                                alt="left image"
+                                className='reset-mid-left-image' />
                         </div>
                     </div>
                     {/* -------------------------------------------Sign in Left part----------------------------------------------- */}
@@ -77,7 +76,8 @@ function ResetPasswordPage() {
 
                                 <div className='reset-right-email-button-container'>
                                     <div className='reset-right-button-container'>
-                                        <a href="#" className='reset-right-send-btn' onClick={() => { sendToEmailVerifyPage() }}>Send</a>
+
+                                        <button className='reset-right-send-btn' onClick={() => { sendToEmailVerifyPage() }}>Send</button>
                                         <a href="#" className='reset-right-login-btn'>Back to <span onClick={goToSignIn}>Login</span></a>
                                     </div>
                                 </div>

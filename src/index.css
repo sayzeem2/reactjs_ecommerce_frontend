@@ -1,3 +1,48 @@
+:root {
+  /* golden */
+  /* --button-color: #BE6929;
+  --footer-color: #F7CA8F;
+  --font-color: #412A1E;
+  --bg-light-color: #FDF8F4;
+ --input-bg-color: #FBF0D8; */
+
+  /* green */
+  /* --button-color: #0B884B;
+  --footer-color: #2F9F48;
+  --font-color: #0A4927;
+  --input-bg-color: #E0ECE2;
+  --bg-light-color: #EBF5EC; */
+
+  /* red  */
+  /* --button-color: #981C22;
+  --footer-color: #D64F5D;
+  --font-color: #712628;
+  --bg-light-color: #FEEEF1;
+  --input-bg-color: #FFD7E2; */
+
+  /* purple */
+  /* --button-color: #6C56A4;
+  --footer-color: #7865AC;
+  --font-color: #3A315B;
+  --input-bg-color: #EDE4F4;
+  --bg-light-color: #F2EFF9; */
+
+  /* blue */
+  /* --button-color: #4B74B9;
+  --footer-color: #0774B7;
+  --font-color: #2B3160;
+  --input-bg-color: #DFEAF7;
+  --bg-light-color: #F0F6FC; */
+
+  /* brown */
+  --button-color: #CEA59C;
+  --footer-color: #645249;
+  --font-color: #493B37;
+  --input-bg-color: #F4EAE5;
+  --bg-light-color: #f8f4f5;
+  --shadow-color: #64524936;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ---------------------------------------Heading Part Start------------------------------------------------------- */
+
+.add-address-right-switch-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-address-right-heading-info-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.add-address-right-heading-contact-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.add-address-right-input-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* ---------------------------------------Heading Part End------------------------------------------------------- */
+
+/* ----------------------------------------Right Input Start------------------------------------------ */
+
+.add-address-right-firstname-container,
+.add-address-right-lastname-container,
+.add-address-right-country-container,
+.add-address-right-company-container,
+.add-address-right-street-container,
+.add-address-right-apartment-container,
+.add-address-right-phone-container,
+.add-address-right-city-container,
+.add-address-right-state-container,
+.add-address-right-postal-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 30px;
+    margin-right: 5%;
+
+}
+
+.add-address-right-delivery-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 30px;
+    margin-right: 5%;
+}
+
+.add-address-right-firstname-span,
+.add-address-right-lastname-span,
+.add-address-right-country-span,
+.add-address-right-company-span,
+.add-address-right-street-span,
+.add-address-right-apartment-span,
+.add-address-right-city-span,
+.add-address-right-state-span,
+.add-address-right-postal-span,
+.add-address-right-delivery-span,
+.add-address-right-phone-span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.add-address-right-firstname-input,
+.add-address-right-lastname-input,
+.add-address-right-country-input,
+.add-address-right-company-input,
+.add-address-right-street-input,
+.add-address-right-apartment-input,
+.add-address-right-city-input,
+.add-address-right-state-dropdown,
+.add-address-right-postal-input,
+.add-address-right-phone-input,
+.add-address-right-delivery-input {
+    height: 60px;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #807D7E;
+}
+
+.add-address-right-delivery-input {
+    height: 200px;
+}
+
+.add-address-right-state-dropdown {
+    color: #807D7E;
+}
+
+.add-address-right-firstname-input:focus,
+.add-address-right-lastname-input:focus,
+.add-address-right-country-input:focus,
+.add-address-right-company-input:focus,
+.add-address-right-street-input:focus,
+.add-address-right-apartment-input:focus,
+.add-address-right-city-input:focus,
+.add-address-right-state-input:focus,
+.add-address-right-postal-input:focus,
+.add-address-right-phone-input:focus,
+.add-address-right-delivery-input {
+    outline: none;
+}
+
+
+.add-address-right-checkbox-main-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.add-address-right-button-main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.add-address-right-save-button-container,
+.add-address-right-cancel-button-container {
+    margin-top: 60px;
+    margin-right: 40px;
+}
+
+.add-address-right-save-button,
+.add-address-right-cancel-button {
+    width: 160px;
+    height: 65px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: #8a33fd;
+    color: white;
+    border: none;
+    transition: all 0.1s ease;
+}
+
+.add-address-right-cancel-button {
+    background-color: #f5f5f5;
+    color: #807D7E;
+}
+
+.add-address-right-save-button:hover,
+.add-address-right-cancel-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.add-address-right-checkbox-content-container {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.add-address-right-address-checkbox {
+    transform: scale(1.7);
+    accent-color: #807D7E
+}
+
+.add-address-right-address-label {
+    margin-left: 15px;
+    font-size: 1.1rem;
+    color: #807D7E;
+    font-weight: 500;
+}
+
+/* ----------------------------------------Right Input Start------------------------------------------ */

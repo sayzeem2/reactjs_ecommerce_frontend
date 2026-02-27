@@ -1,99 +1,29 @@
 import React from 'react'
 import "./AboutUs.css"
-import facebookLogo from '../assets/facebook_icon.png'
-import twitterLogo from '../assets/twitter_icon.png'
-import linkedinLogo from '../assets/linkedin_icon.png'
-import instaLogo from '../assets/instagram_icon.png'
-import { useNavigate } from 'react-router-dom'
 import { Linkedin, Twitter } from 'lucide-react'
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar'
 function AboutUs() {
-    const teamObj = [{
+    const teamMembers = [{
         id: 1,
         name: "Mark Waugh",
         image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZW1wbG95ZWV8ZW58MHx8MHx8fDA%3D",
-        altname: "Founder"
+        role: "Founder"
     }, {
         id: 2,
         name: "Angelina Waugh",
         image: "https://images.unsplash.com/photo-1573497491765-dccce02b29df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGVtcGxveWVlfGVufDB8fDB8fHww",
-        altname: "Director"
+        role: "Director"
     }, {
         id: 3,
         name: "Celina Gomes",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vZGVsfGVufDB8fDB8fHww",
-        altname: "Admin Head"
+        role: "Admin Head"
     },
     ]
-
-
-    const navigate = useNavigate();
-    const goToHomePage = () => {
-        navigate("/home-page")
-    }
-    const goToAboutUsPage = () => {
-        navigate("/about-us")
-    }
-    const goToContactUsPage = () => {
-        navigate("/contact-us")
-    }
-    const goToTermsConditionsPage = () => {
-        navigate("/terms-conditions")
-    }
-    const goToShippingPolicyPage = () => {
-        navigate("/shipping-policy")
-    }
-    const socialmedialogos = [
-        {
-            id: 1,
-            altname: "facebook",
-            image: facebookLogo,
-        },
-        {
-            id: 2,
-            altname: "instagram",
-            image: instaLogo,
-        },
-        {
-            id: 3,
-            altname: "twitter",
-            image: twitterLogo,
-        },
-        {
-            id: 4,
-            altname: "linkedin",
-            image: linkedinLogo,
-        },
-    ];
     return (
         <div>
             {/* -----------------------------------navbar part start------------------------------------------- */}
-            {/* <nav className="aboutus-nav-container">
-                <div className="aboutus-nav-element-container">
-                    <div className='aboutus-nav-element-left'>
-                        <div className='aboutus-nav-logo' onClick={goToHomePage}></div>
-                        <div className='aboutus-nav-categories-container'>
-                            <a href="" className="aboutus-nav-categories-shop">Shop</a>
-                            <a href="" className='aboutus-nav-categories-men'>Men</a>
-                            <a href="" className='aboutus-nav-categories-women'>Women</a>
-                            <a href="" className='aboutus-nav-categories-combos'>Combos</a>
-                            <a href="" className='aboutus-nav-categories-joggers'>Joggers</a>
-                        </div>
-                    </div>
-                    <div className='aboutus-nav-search-container'>
-                        <a href="#" className='aboutus-nav-search-img'></a>
-                        <input type="text" className='aboutus-nav-search-input' placeholder='Search' />
-                    </div>
-                    <div className='aboutus-nav-element-right'>
-                        <div className='aboutus-nav-icons-container'>
-                            <div className='aboutus-nav-wishlist-icon'></div>
-                            <div className='aboutus-nav-account-icon'></div>
-                            <div className='aboutus-nav-shoppingCart-icon'></div>
-                        </div>
-                    </div>
-                </div>
-            </nav> */}
             <NavBar />
             {/* -----------------------------------navbar part end------------------------------------------- */}
             {/* ---------------------------------------Our Story Start--------------------------------------------- */}
@@ -127,8 +57,7 @@ function AboutUs() {
                     </div>
 
                     <div className='aboutus-story-right-container'>
-                        <div className='aboutus-story-right-image-wrapper'></div>
-                        <img className='aboutus-story-right-image' src="https://images.pexels.com/photos/34987639/pexels-photo-34987639.jpeg" alt="Our Story Image" />
+                        <img className='aboutus-story-right-image' src="https://images.pexels.com/photos/34987639/pexels-photo-34987639.jpeg" alt="The Corner Store story" />
                     </div>
                 </div>
             </div>
@@ -139,18 +68,18 @@ function AboutUs() {
                     <h3>OUR TEAM</h3>
                 </div>
                 <div className='aboutus-team-space-container'>
-                    {teamObj.slice(0, 3).map((item) => (
+                    {teamMembers.slice(0, 3).map((item) => (
                         <div key={item.id} className="aboutus-team-card">
                             <div className="aboutus-team-image-wrapper">
                                 <img
                                     src={item.image}
-                                    alt={item.altname}
+                                    alt={item.name}
                                     className="aboutus-team-image"
                                 />
                             </div>
                             <div className="aboutus-team-content">
                                 <span className='aboutus-team-name'>{item.name}</span>
-                                <span className='aboutus-team-designation'>{item.altname}</span>
+                                <span className='aboutus-team-designation'>{item.role}</span>
                                 <div className='aboutus-team-social-links'>
                                     <Linkedin className="aboutus-team-social-logos" size={20} />
                                     <Twitter className="aboutus-team-social-logos" size={20} />

@@ -50,32 +50,7 @@ function ContactUs() {
     return (
         <div>
             {/* -----------------------------------navbar part start------------------------------------------- */}
-            {/* <nav className="contactus-nav-container">
-                <div className="contactus-nav-element-container">
-                    <div className='contactus-nav-element-left'>
-                        <div className='contactus-nav-logo' onClick={goToHomePage}></div>
-                        <div className='contactus-nav-categories-container'>
-                            <a href="" className="contactus-nav-categories-shop">Shop</a>
-                            <a href="" className='contactus-nav-categories-men'>Men</a>
-                            <a href="" className='contactus-nav-categories-women'>Women</a>
-                            <a href="" className='contactus-nav-categories-combos'>Combos</a>
-                            <a href="" className='contactus-nav-categories-joggers'>Joggers</a>
-                        </div>
-                    </div>
-                    <div className='contactus-nav-search-container'>
-                        <a href="#" className='contactus-nav-search-img'></a>
-                        <input type="text" className='contactus-nav-search-input' placeholder='Search' />
-                    </div>
-                    <div className='contactus-nav-element-right'>
-                        <div className='contactus-nav-icons-container'>
-                            <div className='contactus-nav-wishlist-icon'></div>
-                            <div className='contactus-nav-account-icon'></div>
-                            <div className='contactus-nav-shoppingCart-icon'></div>
-                        </div>
-                    </div>
-                </div>
-            </nav> */}
-             <NavBar />
+            <NavBar />
             {/* -----------------------------------navbar part end------------------------------------------- */}
             {/* ---------------------------------------feedback Start--------------------------------------------- */}
 
